@@ -1,13 +1,13 @@
 package harouane.U5W1D1_SpringInt.Entities.Menu.Drinks;
 
-import harouane.U5W1D1_SpringInt.Entities.Menu.Menu;
+import harouane.U5W1D1_SpringInt.Entities.Menu.MenuItem;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter(AccessLevel.PROTECTED)
-@Setter(AccessLevel.PROTECTED)
-public abstract class Drink extends Menu {
+@Getter(AccessLevel.PUBLIC)
+@Setter(AccessLevel.PUBLIC)
+public abstract class Drink extends MenuItem {
     double capacity;
 
     public Drink(String name, double calories, double price, double capacity) {

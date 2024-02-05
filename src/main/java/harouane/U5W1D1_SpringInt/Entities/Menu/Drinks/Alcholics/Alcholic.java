@@ -6,11 +6,13 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public abstract class Alcholic extends Drink {
+public class Alcholic extends Drink {
     double grade;
 
     public Alcholic(String name, double calories, double price, double capacity, double grade) {
         super(name, calories, price, capacity);
         this.grade = grade;
     }
+
+
 }

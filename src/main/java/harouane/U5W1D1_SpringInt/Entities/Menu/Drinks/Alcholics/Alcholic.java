@@ -1,0 +1,16 @@
+package harouane.U5W1D1_SpringInt.Entities.Menu.Drinks.Alcholics;
+
+import harouane.U5W1D1_SpringInt.Entities.Menu.Drinks.Drink;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public abstract class Alcholic extends Drink {
+    double grade;
+
+    public Alcholic(String name, double calories, double price, double capacity, double grade) {
+        super(name, calories, price, capacity);
+        this.grade = grade;
+    }
+}

@@ -1,5 +1,6 @@
 package harouane.U5W1D1_SpringInt;
 
+import harouane.U5W1D1_SpringInt.Entities.Menu.Menu;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -10,6 +11,10 @@ public class Main {
         SpringApplication.run(Main.class, args);
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(Main.class);
 
-        System.out.println(ctx.getBean("menu"));
+
+        Menu menu = (Menu) ctx.getBean("menu");
+        menu.print();
+
+        ctx.close();
     }
 }

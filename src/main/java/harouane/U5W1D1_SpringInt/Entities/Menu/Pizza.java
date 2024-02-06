@@ -17,9 +17,13 @@ public class Pizza extends MenuItem {
         this.toppings = toppings;
     }
 
+    void addToppings(List<Topping> toppings) {
+        toppings.forEach(t -> this.toppings.add(t));
+    }
+
     @Override
     public String toString() {
-        return name + ": " + toppings + "-> Costo: " + price + ", Calorie: " + calories;
+        return name + ":\n" + toppings + "\n-> Costo: " + price + ", Calorie: " + calories;
     }
 
 
